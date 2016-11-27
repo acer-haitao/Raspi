@@ -72,7 +72,7 @@ a:hover{
       
 /*设置标签页嘴上一栏的文字样式结束*/
 #nav-top{
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 	height: 50px;
 }
@@ -106,7 +106,7 @@ a:hover{
 	top: 18px;
 }
 .navimg .row .Bdsearch form .Bdtext{
-	width: 800px;
+	width:800px;
 	height: 38px;
 	text-indent: 18px;
 	font-size: 25px;
