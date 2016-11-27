@@ -1,0 +1,193 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: Arial;
+}
+ul{
+	list-style: none;      /*清除ul的样式*/
+}
+a{
+	text-decoration: none;    /*清除下划线*/
+}
+a:hover{
+	text-decoration: none;    /*清除下划线*/
+}
+/*以上是公共样式的内容*/
+/*右上角微信开始*/
+.xin{
+	position: fixed;
+	width: 350px;
+	height: 100px;
+	line-height: 100px;
+	background: #3385FF;
+	text-align: center;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+.xin:after{
+	content: "";
+	position: absolute;
+	left: 350px;
+	top: 0px;
+	z-index: 99;
+	background: url(../img/mackxin.jpg);
+	width: 100px;
+	height: 100px;
+	transform-origin:top left;
+	transform: scale(0);
+	opacity: 0;
+	transition:all 1s;
+}
+.xin:hover:after{
+	transform:scale(1);
+	opacity: 1;
+}
+/*右上角微信结束*/
+/*顶部导航栏样式开始*/
+.nav-tabs{          /*设置标签页嘴上一栏的文字样式开始*/
+	font-size: 20px;
+	border-bottom: 1px solid #3385FF;
+}
+.nav-tabs li a{
+	color: #F92672;
+	font-weight: 600;
+	transition: 1s;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover #nav-top{
+	color: #3855FF;
+	border: 1px solid #3385FF;
+	border-bottom-color: transparent;     /*设置边框底部的颜色为透明的*/
+} 
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a:hover{
+	background: #3385FF;
+	color: white;
+}
+      
+/*设置标签页嘴上一栏的文字样式结束*/
+#nav-top{
+	width: 50%;
+	margin: 0 auto;
+	height: 50px;
+}
+#nav-top ul li{
+	float: left;
+	width: 12.5%;
+	height: 50px;
+}
+#nav-top ul li a{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	color: #F92672;
+	font-size: 20px;
+	font-family: Arial;
+	transition: 1s;
+}
+#nav-top ul li a:hover{
+	background: #3385FF;	/*#4285F4*/
+	color: white;
+}
+/*顶部导航栏样式结束*/
+/*logo和搜索开始*/
+.navimg{
+	height: 100px;
+	position: relative;
+}
+.navimg .row .Bdsearch form{
+	position: absolute;
+	left: 0px;
+	top: 18px;
+}
+.navimg .row .Bdsearch form .Bdtext{
+	width: 800px;
+	height: 38px;
+	text-indent: 18px;
+	font-size: 25px;
+	float: left;
+	color: #3385FF;
+	position: absolute;
+	left: 100px;
+	top: 8px;
+	border: 1px solid #3385FF;
+}
+.navimg .row .Bdsearch form .Bdss{
+	width: 120px;
+	height: 38px;
+	background: #3385FF;
+	color: white;
+	border: 0px none;
+	font-size: 22px;
+	line-height: 38px;
+	position: absolute;
+	left: 800px;
+	top: 8px;
+}
+/*logo和搜索结束*/
+/*导航标签页开始*/
+.navbq .row .navbq2 ul{
+	height: 215px;         /*这个代码是用来固定标签页的高度的  #303030  */
+}
+.navbq .row .navbq2 ul li{
+	float: left;
+}
+.navbq .row .navbq2 ul li a{
+	display: block;
+	width: 189px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 22px;
+	transition: 1s;
+	font-weight: 500;
+	color: #3385FF;
+}
+.navbq .row .navbq2 ul li a:hover{
+	background: #3385FF;
+	color: white;
+}
+/*#maintab{
+	border: 1px solid #3385FF;
+	border-bottom: none;
+	background: #9e8e8e;
+}
+.tab-pane{
+	border: 1px solid #3385FF;
+	border-top: none;
+	background: #9e8e8e;
+}*/
+/*导航标签页结束*/
+/*底部开始*/
+footer{
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	background: #3385FF;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	position: relative;
+}
+footer .xin{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+}
+footer .lotus{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 400px;
+	height: 100px;
+	color: white;
+}
+footer .lotus p{
+	margin: 10px 0px;
+}
+/*底部结束*/
