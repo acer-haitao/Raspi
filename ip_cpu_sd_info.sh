@@ -22,4 +22,4 @@ echo " ` sudo oraynewph status`"
 
 echo "CPU温度:`cat /sys/class/thermal/thermal_zone0/temp` "
 
-
+#echo `ps -ef|grep -i vnc`

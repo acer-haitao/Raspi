@@ -1,6 +1,6 @@
 CC=gcc
 AFLAGS=-Wall -g  
-OBJS=login.cgi configshow.cgi setconfig.cgi
+OBJS=login.cgi configshow.cgi setconfig.cgi send_mail.cgi setVNC.cgi
 run:$(OBJS)
 
 $(OBJS):%.cgi:%.c

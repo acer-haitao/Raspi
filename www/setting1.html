@@ -131,20 +131,42 @@
                 <td height="30">
                 <input type="reset" value="取消设置" name="reset_set_env" id="reset_set_env"/></td>
               </tr>
-
-
 		</form>
+		
+		<!--form2分割线-->
+		  <form name="set_VNC" id="set_VNC" method="post" action="cgi-bin/setVNC.cgi">
+              <tr>
+                <td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt2">VNC设置：</td>
+                <td width="3%" height="30" bgcolor="#f2f2f2">&nbsp;</td>
+                <td width="27%" height="30" bgcolor="#f2f2f2">
+                <input name="VNC" type="text" id="VNC" value="vncserver -geometry 1300x768" size="30" maxlength="4" /></td>
+                <td width="6%" height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
+                <td width="44%" height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
+              </tr>
+			  
+              <tr>
+                <td height="30" align="right" class="left_txt2">&nbsp;</td>
+                <td height="30">&nbsp;</td>
+                <td height="30" align="right">                 
+                <input type="submit" value="确认提交" name="submit_set_VNC" id="submit_set_VNC"/></td>
+                <td height="30">&nbsp;</td>
+                <td height="30">
+                <input type="reset" value="取消设置" name="reset_set_VNC" id="reset_set_VNC"/></td>
+              </tr>
+		</form>
+		<!--form2分割线-->
+		
+		
               <tr>
                 <td height="30" colspan="5" align="right" class="left_txt2">
-              
               </tr>
+			  
               <tr>
-              
                   </form>
                   <tr>
                     <td height="31" colspan="5" align="right" class="left_txt2"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="nowtable">
                       <tr>
-                        <td height="30"  align="left" class="left_bt2" aclass="left_bt2">&nbsp;&nbsp;&nbsp;&nbsp; 网络设置</td>
+                        <td height="30"  align="left" class="left_bt2" aclass="left_bt2">&nbsp;&nbsp;&nbsp;&nbsp; IP上传邮箱设置</td>
                         </tr>
 
                       </table></td>
@@ -153,20 +175,20 @@
               </tr>
               <tr>
                 <td height="30" colspan="5" class="left_txt2"><table width="100%" height="85" border="0" cellpadding="0" cellspacing="0">
-                <form name="set_wifi" id="set_wifi" method="post" action="cgi-bin/set_wifi.cgi">
+                <form name="set_wifi" id="set_wifi" method="post" action="cgi-bin/send_mail.cgi">
                   <tr>
-                    <td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">IP 设置：</td>
+                    <td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">邮箱设置：</td>
                     <td width="3%" height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
                     <td width="27%" height="30" bgcolor="#f2f2f2" class="left_txt">
-                    <input name="ipaddr" type="text" value="192.168.0.20" size="30" maxlength="15" id="ipaddr" /></td>
+                    <input name="ipaddr" type="text" value="acer_yuhaitao@163.com" size="30" maxlength="15" id="ipaddr" /></td>
                     <td width="6%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
                     <td width="44%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td height="30" align="right" class="left_txt">网关设置：</td>
+					  <td height="30" align="right" class="left_txt">上传密码：</td>
                     <td height="30" align="right" class="left_txt">&nbsp;</td>
                     <td height="30" class="left_txt">
-                    <input name="gateway" type="text" value="192.168.0.1" size="30" maxlength="15" id="gateway" /></td>
+                    <input name="gateway" type="text" value="******" size="30" maxlength="15" id="gateway" /></td>
                     <td height="30" align="right" class="left_txt">&nbsp;</td>
                     <td height="30" align="right" class="left_txt">&nbsp;</td>
                   </tr>
@@ -174,10 +196,10 @@
                     <td height="30" align="right" class="left_txt">&nbsp;</td>
                     <td height="30" align="right" class="left_txt">&nbsp;</td>
                     <td height="30" align="right">
-                    <input type="submit" value="确认提交" name="submit_set_wifi" id="submit_on_wifi"/></td>
+                    <input type="submit" value="确认发送" name="submit_set_wifi" id="submit_on_wifi"/></td>
                     <td height="30" align="right" class="left_txt">&nbsp;</td>
                     <td height="30" align="left">
-                    <input type="submit" value="取消提交" name="submit_set_wifi" id="submit_off_wifi"/></td>
+                    <input type="submit" value="取消发送" name="submit_set_wifi" id="submit_off_wifi"/></td>
                   </tr>
                   </form>
                 </table></td>

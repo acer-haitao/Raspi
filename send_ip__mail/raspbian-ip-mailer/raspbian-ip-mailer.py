@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 import os
 import subprocess
 import smtplib
@@ -59,10 +61,10 @@ p = subprocess.Popen( 'ip route list', shell = True, stdout = subprocess.PIPE )
 data = p.communicate()
 split_data = data[ 0 ].split()
 ipaddr = split_data[ split_data.index( 'src' ) + 1 ]
-my_ip = 'Your ip is %s' % ipaddr
+my_ip = 'Your IP is :%s' % ipaddr
 start( 'Send ip mail ( ' + ipaddr + ' )' )
 msg = MIMEText( my_ip )
-msg[ 'Subject' ] = 'IP For RaspberryPi on %s' % today.strftime('%b %d %Y')
+msg[ 'Subject' ] = 'IP For RaspberryPi on %s' % time.strftime('%Y/%m/%d/ %H:%M:%S') 
 msg[ 'From' ] = mail_user
 msg[ 'To' ] = send_to
 try:
