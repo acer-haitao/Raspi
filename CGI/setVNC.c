@@ -8,14 +8,15 @@
 #include <errno.h>
 #include "cgic.h"
 #define N 50
-
+#define VNC_NUM 10
 
 
 
 int cgiMain()
 {
 	char buf[N] = {0}; //字符接收缓冲区
-	
+	int i;
+
 	FILE *fp;
 	fp = fopen("/home/pi/github/www_log.txt","w" );
 	if(fp == NULL)
@@ -24,13 +25,13 @@ int cgiMain()
 		return -1;
 	}
 
-	cgiFormString("VNC", buf, 5);
+	cgiFormString("VNC", buf, N);
 	
 	fprintf(fp, "VNC设置参数为： %s\n", buf);
 	
-	if((strncmp(buf,"vncserver",4)) == 0)
+	if((strncmp(buf,"VNC", 3)) == 0)
 	{
-	    system("sudo vncserver -geometry 1300x768");
+	    system("sudo vncserver -geometry 1300x670");
 		system("date >> /home/pi/github/www_log.txt");
 		system("ps -ef|grep -i vnc >> /home/pi/github/www_log.txt");
 		cgiHeaderContentType("text/html"); 
@@ -38,7 +39,33 @@ int cgiMain()
 		fprintf(cgiOut, "<TITLE>操作提示</TITLE></HEAD>"); 
 		fprintf(cgiOut, "<BODY BGCOLOR=\"#EEF2FB\">"); 
 		fprintf(cgiOut, "<meta http-equiv=\"refresh\" content=\"3; url=../setting1.html\">");
-		fprintf(cgiOut, "<H2>提交<font color=\"#FF0000\" size=\"+3\">成功！</font>请点击环境信息查看！本页面3秒后自动关闭。</H2>");	
+		fprintf(cgiOut, "<H2>提交<font color=\"#FF0000\" size=\"+3\">成功！</font>请检查VNC能否连接上！本页面3秒后自动关闭。</H2>");	
+		fprintf(cgiOut, "<H2>VNC设置<font color=\"#FF0000\">%s</font></H2>", buf);
+		fprintf(cgiOut, "<script type=\"text/jscript\">");
+		fprintf(cgiOut, "setTimeout(\"self.close()\", 3000)");
+		fprintf(cgiOut, "</script>");
+		fprintf(cgiOut, "</BODY>"); 
+		fprintf(cgiOut, "</HTML>");
+		fflush(stdout);	
+	}
+	else if( (strncmp(buf,"kill", 3)) == 0 )
+	{
+	
+		for(i = 1; i < VNC_NUM; i++)
+		{	
+			sprintf(buf,"sudo vncserver -kill :%d;",i);
+			//printf("%s\n",buf);
+			system(buf);
+		}
+		system("date >> /home/pi/github/www_log.txt");
+	    system("ps -ef|grep -i vnc >> /home/pi/github/www_log.txt");
+
+		cgiHeaderContentType("text/html"); 
+		fprintf(cgiOut, "<HTML><HEAD>"); 
+		fprintf(cgiOut, "<TITLE>操作提示</TITLE></HEAD>"); 
+		fprintf(cgiOut, "<BODY BGCOLOR=\"#EEF2FB\">"); 
+		fprintf(cgiOut, "<meta http-equiv=\"refresh\" content=\"3; url=../setting1.html\">");
+		fprintf(cgiOut, "<H2>请稍后<font color=\"#FF0000\" size=\"+3\"></font>正在关闭VNCserver设置！本页面3秒后自动关闭。</H2>");
 		fprintf(cgiOut, "<H2>VNC设置<font color=\"#FF0000\">%s</font></H2>", buf);
 		fprintf(cgiOut, "<script type=\"text/jscript\">");
 		fprintf(cgiOut, "setTimeout(\"self.close()\", 3000)");
@@ -49,15 +76,12 @@ int cgiMain()
 	}
 	else
 	{
-		system("vncserver -kill :1;vncserver -kill :2;vncserver -kill :3;vncserver -kill :4;vncserver -kill :5;");
-		system("date >> /home/pi/github/www_log.txt");
-	    system("ps -ef|grep -i vnc >> /home/pi/github/www_log.txt");
 		cgiHeaderContentType("text/html"); 
 		fprintf(cgiOut, "<HTML><HEAD>"); 
 		fprintf(cgiOut, "<TITLE>操作提示</TITLE></HEAD>"); 
 		fprintf(cgiOut, "<BODY BGCOLOR=\"#EEF2FB\">"); 
 		fprintf(cgiOut, "<meta http-equiv=\"refresh\" content=\"3; url=../setting1.html\">");
-		fprintf(cgiOut, "<H2>请稍后<font color=\"#FF0000\" size=\"+3\"></font>正在关闭VNCserver设置！本页面3秒后自动关闭。</H2>");
+		fprintf(cgiOut, "<H2>输入不正确<font color=\"#FF0000\" size=\"+3\"></font>请检查VNCserver设置！本页面3秒后自动关闭。</H2>");
 		fprintf(cgiOut, "<H2>VNC设置<font color=\"#FF0000\">%s</font></H2>", buf);
 		fprintf(cgiOut, "<script type=\"text/jscript\">");
 		fprintf(cgiOut, "setTimeout(\"self.close()\", 3000)");

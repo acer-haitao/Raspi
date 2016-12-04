@@ -131,6 +131,7 @@ int cgiMain()
 
 	cgiHeaderContentType("text/html"); 
 	fprintf(cgiOut, "<HTML><HEAD>"); 
+    fprintf(cgiOut, "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>");  
 	fprintf(cgiOut, "<TITLE>当前系统信息</TITLE>");  
 	fprintf(cgiOut, "<style type=\"text/css\"> body,td,th {font-size: 12px;margin-left: 0px;margin-top: 0px;}</style></HEAD>"); 
 	fprintf(cgiOut, "<BODY BGCOLOR=\"#F8F9FA\">"); 

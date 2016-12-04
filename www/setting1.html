@@ -127,9 +127,13 @@
                 <td height="30">&nbsp;</td>
                 <td height="30" align="right">                 
                 <input type="submit" value="确认提交" name="submit_set_env" id="submit_set_env"/></td>
-                <td height="30">&nbsp;</td>
+         
+				<!--
+				<td height="30">&nbsp;</td>
                 <td height="30">
                 <input type="reset" value="取消设置" name="reset_set_env" id="reset_set_env"/></td>
+				-->
+
               </tr>
 		</form>
 		
@@ -139,7 +143,7 @@
                 <td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt2">VNC设置：</td>
                 <td width="3%" height="30" bgcolor="#f2f2f2">&nbsp;</td>
                 <td width="27%" height="30" bgcolor="#f2f2f2">
-                <input name="VNC" type="text" id="VNC" value="vncserver -geometry 1300x768" size="30" maxlength="4" /></td>
+                <input name="VNC" type="text" id="VNC" value="vncserver -geometry 1300x768" size="30" maxlength="30" /></td>
                 <td width="6%" height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
                 <td width="44%" height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
               </tr>
@@ -149,9 +153,13 @@
                 <td height="30">&nbsp;</td>
                 <td height="30" align="right">                 
                 <input type="submit" value="确认提交" name="submit_set_VNC" id="submit_set_VNC"/></td>
-                <td height="30">&nbsp;</td>
+              
+				<!--
+				<td height="30">&nbsp;</td>
                 <td height="30">
                 <input type="reset" value="取消设置" name="reset_set_VNC" id="reset_set_VNC"/></td>
+				-->
+
               </tr>
 		</form>
 		<!--form2分割线-->
@@ -175,12 +183,13 @@
               </tr>
               <tr>
                 <td height="30" colspan="5" class="left_txt2"><table width="100%" height="85" border="0" cellpadding="0" cellspacing="0">
-                <form name="set_wifi" id="set_wifi" method="post" action="cgi-bin/send_mail.cgi">
+                
+				<form name="set_wifi" id="set_wifi" method="post" action="cgi-bin/send_mail.cgi">
                   <tr>
                     <td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">邮箱设置：</td>
                     <td width="3%" height="30" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
                     <td width="27%" height="30" bgcolor="#f2f2f2" class="left_txt">
-                    <input name="ipaddr" type="text" value="acer_yuhaitao@163.com" size="30" maxlength="15" id="ipaddr" /></td>
+                    <input name="ipaddr" type="text" value="dih_yuhaitao@126.com" size="30" maxlength="30" id="ipaddr" /></td>
                     <td width="6%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
                     <td width="44%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">&nbsp;</td>
                   </tr>
@@ -202,6 +211,8 @@
                     <input type="submit" value="取消发送" name="submit_set_wifi" id="submit_off_wifi"/></td>
                   </tr>
                   </form>
+
+
                 </table></td>
                 </tr>
             </table></td>
