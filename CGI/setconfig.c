@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include "cgic.h"
-
+#include <time.h>
 
 
 
@@ -26,9 +26,11 @@ int cgiMain()
 	char buf[5] = {0}; //字符接收缓冲区
 	char errflag = 0; //错误标志
 	struct setEnv new; //环境变量临时结构体
-	
+	time_t timep;
+	time(&timep);   
+
 	FILE *fp;
-	fp = fopen("/home/pi/www/1.txt","w" );
+	fp = fopen("/home/pi/github/www_env.txt","a+" );
 	if(fp == NULL)
  	{
 		printf("open failed\n");
@@ -49,7 +51,9 @@ int cgiMain()
 	cgiFormString("illMIN", buf, 5);
 	new.illMIN = atoi (buf);
 	//fwrite(&new,sizeof(new),1,fp);
-	fprintf(fp, "参数1--> %d\n 参数2--> %d \n 参数3--> %d\n 参数4--> %d\n 参数5--> %d\n 参数6--> %d", new.temMAX, new.temMIN, new.humMAX, new.humMAX, new.illMAX, new.illMIN);
+	fprintf(fp, "时间:%s",ctime(&timep));    
+	fprintf(fp, " 参数1--> %d\n 参数2--> %d \n 参数3--> %d\n 参数4--> %d\n 参数5--> %d\n 参数6--> %d", new.temMAX, new.temMIN, new.humMAX, new.humMAX, new.illMAX, new.illMIN);
+	fprintf(fp, "\n------------------------------------------------\n"); 
 
 	if(new.temMAX < new.temMIN || new.temMAX > 100)
 		errflag |= 1 << 5;

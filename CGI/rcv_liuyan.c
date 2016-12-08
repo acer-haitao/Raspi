@@ -9,8 +9,7 @@
 #include "cgic.h"
 #include <time.h> 
 
-#define N 50
-#define VNC_NUM 1024
+#define N 4096
 
 
 
@@ -39,7 +38,7 @@ int cgiMain()
 	cgiHeaderContentType("text/html"); 
 	fprintf(cgiOut, "<HTML><HEAD>"); 
 	fprintf(cgiOut, "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>"); 
-	fprintf(cgiOut, "<TITLE>Thank you</TITLE></HEAD>"); 
+	fprintf(cgiOut, "<TITLE>留言板块</TITLE></HEAD>"); 
 	fprintf(cgiOut, "<BODY BGCOLOR=\"#EEF2FB\">"); 
 	fprintf(cgiOut, "<meta http-equiv=\"refresh\" content=\"3; url=../index.html\">");
 	fprintf(cgiOut, "<H2>提交<font color=\"#FF0000\" size=\"+3\">成功！</font>本页面3秒后自动关闭。</H2>");	

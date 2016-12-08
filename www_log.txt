@@ -1,7 +1,5 @@
-VNC设置参数为： VNC
-16
-root      5315   719  0 13:59 ?        00:00:00 /www/cgi-bin/setVNC.cgi
-root      5332     1 12 13:59 ?        00:00:00 Xtightvnc :1 -desktop X -auth /root/.Xauthority -geometry 1300x670 -depth 24 -rfbwait 120000 -rfbauth /root/.vnc/passwd -rfbport 5901 -fp /usr/share/fonts/X11/misc/,/usr/share/fonts/X11/Type1/,/usr/share/fonts/X11/75dpi/,/usr/share/fonts/X11/100dpi/ -co /etc/X11/rgb
-root      5336     1  0 13:59 ?        00:00:00 /bin/sh /root/.vnc/xstartup
-root      5348  5315  0 13:59 ?        00:00:00 sh -c ps -ef|grep -i vnc >> /home/pi/github/www_log.txt
-root      5351  5348  0 13:59 ?        00:00:00 grep -i vnc
+VNC设置参数为： kill
+6
+root      3158   683  0 18:28 ?        00:00:00 /www/cgi-bin/setVNC.cgi
+root      3339  3158  0 18:28 ?        00:00:00 sh -c ps -ef|grep -i vnc >> /home/pi/github/www_log.txt
+root      3341  3339  0 18:28 ?        00:00:00 grep -i vnc
