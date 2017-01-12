@@ -7,7 +7,7 @@ echo "主机信息:`uname -a`"
 
 #echo "无线IP:"
 echo 无线IP:`ifconfig wlan0 | sed -n "2,2p" | awk '{print substr($2,6)}'`
-#echo "有线IP:`ifconfig 0 | sed -n "2,2p" | awk '{print substr($2,6)}'`"
+echo "有线IP:`ifconfig 0 | sed -n "2,2p" | awk '{print substr($2,6)}'`"
 
 echo "磁盘信息："
 echo " `df -h` "
@@ -23,3 +23,5 @@ echo " ` sudo oraynewph status`"
 echo "CPU温度:`cat /sys/class/thermal/thermal_zone0/temp` "
 
 #echo `ps -ef|grep -i vnc`
+echo "VNC开启状态:"
+echo `netstat -tulpn | grep vnc`

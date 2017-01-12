@@ -31,7 +31,7 @@ int cgiMain()
 		
 		if(strncmp(wifi.gateway,"haitao",6) == 0)
 		{
-		system("sudo /usr/local/bin/raspbian-ip-mailer.py  &");
+		system("sudo  /home/pi/github/send_sys_info.py  &");
 		//system("/home/pi/github/send_ip__mail/send_myemail");
 		cgiHeaderContentType("text/html"); 
 		fprintf(cgiOut, "<HTML><HEAD>"); 

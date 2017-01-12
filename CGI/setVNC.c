@@ -8,7 +8,7 @@
 #include <errno.h>
 #include "cgic.h"
 #define N 50
-#define VNC_NUM 10
+#define VNC_NUM 16
 
 
 
@@ -48,17 +48,19 @@ int cgiMain()
 		fprintf(cgiOut, "</HTML>");
 		fflush(stdout);	
 	}
-	else if( (strncmp(buf,"kill", 3)) == 0 )
+	else if( (strncmp(buf,"kill", 4)) == 0 )
 	{
 	
-		for(i = 1; i < VNC_NUM; i++)
+		for(i = 0; i < VNC_NUM; i++)
 		{	
 			sprintf(buf,"sudo vncserver -kill :%d;",i);
+			//sprintf(buf,"sudo vncserver -kill :%d;",i);
 			//printf("%s\n",buf);
 			system(buf);
 		}
 		system("date >> /home/pi/github/www_log.txt");
-	    system("ps -ef|grep -i vnc >> /home/pi/github/www_log.txt");
+	    //system("ps -ef|grep -i vnc >> /home/pi/github/www_log.txt");
+	    system("netstat -tulpn | grep vnc >> /home/pi/github/www_log.txt");
 
 		cgiHeaderContentType("text/html"); 
 		fprintf(cgiOut, "<HTML><HEAD>"); 
@@ -76,6 +78,14 @@ int cgiMain()
 	}
 	else
 	{
+		
+		for(i = 0; i < VNC_NUM; i++)
+		{	
+			sprintf(buf,"vncserver -kill :%d;",i);
+			//sprintf(buf,"sudo vncserver -kill :%d;",i);
+			//printf("%s\n",buf);
+			system(buf);
+		}
 		cgiHeaderContentType("text/html"); 
 		fprintf(cgiOut, "<HTML><HEAD>"); 
 		fprintf(cgiOut, "<TITLE>操作提示</TITLE></HEAD>"); 

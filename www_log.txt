@@ -1,5 +1,2 @@
 VNC设置参数为： kill
-6
-root     14832   733  0 09:12 ?        00:00:00 /www/cgi-bin/setVNC.cgi
-root     15002 14832  0 09:12 ?        00:00:00 sh -c ps -ef|grep -i vnc >> /home/pi/github/www_log.txt
-root     15004 15002  0 09:12 ?        00:00:00 grep -i vnc
+7
