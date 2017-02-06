@@ -78,10 +78,10 @@ ipaddr = split_data[ split_data.index( 'src' ) + 1 ]
 my_ip = 'Your IP is :%s' % ipaddr
 '''
 #调用sh脚本
-os.system('/home/pi/github/ip_cpu_sd_info.sh >> /home/pi/github/sys_info.c')
+#os.system('/home/pi/github/ip_cpu_sd_info.sh >> /home/pi/github/sys_info.c')
 
 #从文件里读文件
-File = open("/home/pi/github/sys_info.c", "r")
+File = open("/home/pi/github/www_rcv.txt", "r")
 my_ip = File.read()
 File.close()
 
@@ -116,4 +116,5 @@ try:
 except Exception, what:
     fail()
 smtpserver.quit()
-os.system(' rm /home/pi/github/sys_info.c')
+#os.system(' rm /home/pi/github/sys_info.c')
+File.close()
