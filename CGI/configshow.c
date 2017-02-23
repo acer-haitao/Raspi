@@ -153,7 +153,7 @@ int cgiMain()
 #endif	
 	fprintf(cgiOut, "</table>");
 	fprintf(cgiOut, "<script type=\"text/jscript\">");
-	fprintf(cgiOut, "setTimeout(\"self.close()\", 3000)");
+	fprintf(cgiOut, "setTimeout(\"self.close()\", 30000)");
 	fprintf(cgiOut, "</script>");
 	fprintf(cgiOut, "</BODY>"); 
 	fprintf(cgiOut, "</HTML>");

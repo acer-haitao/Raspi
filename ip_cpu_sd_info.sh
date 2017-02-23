@@ -7,7 +7,7 @@ echo "主机信息:`uname -a`"
 
 #echo "无线IP:"
 echo 无线IP:`ifconfig wlan0 | sed -n "2,2p" | awk '{print substr($2,6)}'`
-echo "有线IP:`ifconfig 0 | sed -n "2,2p" | awk '{print substr($2,6)}'`"
+echo "有线IP:`ifconfig eth0 | sed -n "2,2p" | awk '{print substr($2,6)}'`"
 
 echo "磁盘信息："
 echo " `df -h` "

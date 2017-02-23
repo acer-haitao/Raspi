@@ -16,7 +16,7 @@ while(1) :
     else :
         print "正在重启花生壳客户端"
         os.system("sudo oraynewph stop")
-        os.system("sleep 5")
+        os.system("sleep 10")
         os.system("sudo oraynewph start")
-        os.system("sleep 60")
+        os.system("sleep 120")
 
