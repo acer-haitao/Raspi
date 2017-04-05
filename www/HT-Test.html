@@ -150,9 +150,9 @@ p.main
 		<table border="1" id="tab1">
 			 <tr><!--表头><--> 
 				<th>文件上传</th>
-				<th>文件下载</th>
-				<th>添加网址</th>
 				<th>执行脚本</th>
+				<th>添加网址</th>
+				<th>删除网址</th>
 				<th>传送邮件</th>
 			</tr>
 			
@@ -166,31 +166,58 @@ p.main
 
 				<td> 
 				 <form enctype="multipart/form-data" action="/cgi-bin/Test.py" method="post">
-				   <p>选择文件: <input type="file" name="filename" /></p>
-				   <p><input type="submit" value="下载" /></p>
+				系统命令: <input type="text" name="netcmd"><br>
+				管理姓名: <input type="text" name="netcmdName"><br>
+				管理密码: <input type="password" name="pwd"><br>
+				<input type="submit" value="提交" />
 				 </form>
 				 </td>
 				 
 				 <td>
 				<form enctype="multipart/form-data" action="/cgi-bin/addNetURL.py" method="post">
-				网址: <input type="text" name="netURL"><br>
-				名称: <input type="text" name="netName"><br>
-				密码: <input type="password" name="pwd">
-				<p><input type="submit" value="提交" /></p>
+				添加网址: <input type="url" name="netURL"><br>
+				网址名称: <input type="text" name="netName"><br>
+				管理密码: <input type="password" name="pwd"><br>
+				<!--&nbsp;&nbsp;-->
+				<select name="addnumber">
+					<option value="1">常用网站</option>
+					<option value="2">Web开发</option>
+					<option value="3">前端论坛</option>
+					<option value="4">在线学院</option>
+					<option value="5">学习笔记</option>
+					<option value="6">电子公司</option>
+					<option value="7">空间博客</option>
+					<option value="8">工具集合</option>
+					<option value="9">PS学习</option>
+					<option value="10">娱乐视频</option>
+					<option value="11">CSS手册</option>
+					<option value="12">常用购物</option>
+					<option value="13">嵌入式</option>
+				</select>
+				<input type="submit" value="提交" />
 				</form>
 				</td>
 
 				<td>
-				 <form enctype="multipart/form-data" action="/cgi-bin/Test.py" method="post">
-				   <p>选择文件: <input type="file" name="filename" /></p>
-				   <p><input type="submit" value="下载" /></p>
+				 <form enctype="multipart/form-data" action="/cgi-bin/DeleteURL.py" method="post">
+				删除网址: <input type="url" name="deletenetURL"><br>
+				网址名称: <input type="text" name="deletenetName"><br>
+				管理密码: <input type="password" name="deletepwd"><br>
+				<input type="submit" value="提交" />
 				 </form>
 				</td>
 				
 				<td>
 				 <form enctype="multipart/form-data" action="/cgi-bin/Test.py" method="post">
-				   <p>选择文件: <input type="file" name="filename" /></p>
-				   <p><input type="submit" value="下载" /></p>
+				发送邮箱: <input type="email" name="netEmail"><br>
+				
+				发送选项：<select name="sendnumber">
+					<option value="1">留言内容</option>
+					<option value="2">系统信息</option>
+				</select>
+				<br>
+				管理密码: <input type="password" name="pwd"><br>
+				<input type="submit" value="提交" />
 				 </form>
 				</td>
 				
@@ -302,7 +329,7 @@ p.main
 								<td height="30" colspan="4" class="left_txt2"><table width="100%" height="99" border="0" cellpadding="0" cellspacing="0">
 								  <tr class="left_txt2">
 									<form id="ctl_2_m0_dev" name="ctl_2_m0_dev"	method="post" action="/cgi-bin/Test.py">
-									<td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt"><span style="line-height: 25px; color: #000000; font-size: 12px;">Led2</span>:</td>
+									<td width="20%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt"><span style="line-height: 25px; color: #000000; font-size: 12px;">Led</span>:</td>
 									<td width="2%" height="30" align="right" bgcolor="#f2f2f2" class="left_txt">
 									<input style="display:none" name="device" type="text" id="device" value="led:" size="4" maxlength="4"/></td>
 									<td width="14%" height="30" bgcolor="#f2f2f2" class="left_txt">

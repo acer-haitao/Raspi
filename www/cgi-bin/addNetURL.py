@@ -18,6 +18,7 @@ import codecs
 form = cgi.FieldStorage()
 getURL = form.getvalue('netURL')
 getName = form.getvalue('netName')
+getAddNum = form.getvalue('addnumber')
 getPaswd = form.getvalue('pwd')
 #将gb2312转换成utf-8
 strRecv = getName.decode("gb2312").encode("utf-8")
@@ -41,7 +42,7 @@ def AddStrToFile():
 	file.close()
 	fileadd.close()
 
-	pos = content.find("<!--add-->")
+	pos = content.find("<!--add%s-->"%(getAddNum))
 	if pos != -1 :
 		content =  content[:pos] + contentadd + content[pos:]
 		file = open("/www/right.html","w")
@@ -60,7 +61,7 @@ def SucessPrin():
 	print "<h2>网站名称:%s </h2>" %	(strRecv)
 	print "<h2>网站地址:%s </h2>" % (getURL)
 	print "<h2><font color=\"#FF0000\"	size=\"+3\">提交成功！</font>本页面3秒后自动关闭.</h2>"
-	print "<meta http-equiv=\"refresh\" content=\"3; url=../index.html\">"
+        print "<meta http-equiv=\"refresh\" content=\"3; url=../HT-Test.html\">"
 	print "<script type=\"text/jscript\">"
 	print "setTimeout(\"self.close()\", 3000)"
 	print "</script>"
@@ -79,7 +80,7 @@ def FaildPrin():
 	print "<h2>网站名称:%s </h2>" %	(strRecv)
 	print "<h2>网站地址:%s </h2>" % (getURL)
 	print "<h2><font color=\"#FF0000\"size=\"+3\">本提交失败！请检查您的输入是否有误!该页面3秒后自动关闭</font></h2>"
-	print "<meta http-equiv=\"refresh\" content=\"3; url=../index.html\">"
+        print "<meta http-equiv=\"refresh\" content=\"3\";   url=../HT-Test.html\">"
 	print "<script type=\"text/jscript\">"
 	print "setTimeout(\"self.close()\", 3000)"
 	print "</script>"
