@@ -405,3 +405,54 @@ http://blog.csdn.net/huguangshanse00/article/details/14624601
 留言内容：
  在此输入您的留言内容,限5000字哦
 ------------------------------------------------
+时间:Thu Apr  6 17:19:28 2017
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ .navbq /* 改变页面宽度*/
+{
+	width: 100%;
+	margin: 0 auto;
+	height: 50px;
+}
+
+.nav-tabs>li.active>a:hover{
+	background: #3385FF;
+	color: red; /*鼠标点击后字体颜色*/
+}
+
+ #nav-top{
+	color: #00FF00;//字体颜色
+	border: 1px solid #3385FF;
+	border-bottom-color: transparent;     /*设置边框底部的颜色为透明的*/
+}
+
+.navbq .row .navbq2 ul{
+	height: 300px;         /*这个代码是用来网址固定标签页的高度的（距离下面微信扫描的距离）   #303030  */
+}
+
+.navbq .row .navbq2 ul li{
+	float: left; /*网址名称悬浮位置*/
+}
+
+.navbq .row .navbq2 ul li a{
+	display: block;
+	width: 100px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 15px;/*网名字体大小*/
+	transition: 1s;
+	font-weight: 500;
+	color: #3385FF;
+}
+
+#maintab{
+	border: 100px solid #3385FF;/*13个TAB外边框线的颜色及大小*/
+	border-bottom: none;
+	background: #FFFFFF;
+}
+.nav-tabs{          /*设置标签页嘴上一栏的文字样式开始*/
+	font-size: 20px; /*设置Tab里的字体大小*/
+	border-bottom: 0px solid #000000;
+}
+------------------------------------------------

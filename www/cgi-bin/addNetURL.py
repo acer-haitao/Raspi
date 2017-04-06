@@ -11,7 +11,7 @@ import sys
 import re
 import cgi,cgitb
 import codecs
-
+import time
 
 #接收数据
 #def RecvFromForm():
@@ -67,6 +67,7 @@ def SucessPrin():
 	print "</script>"
 	print "</body>"
 	print "</html>"
+        SaveLog(strRecv, getURL)
 #提交失败响应
 def FaildPrin():
 	print "Content-type:text/html"
@@ -86,7 +87,18 @@ def FaildPrin():
 	print "</script>"
 	print "</body>"
 	print "</html>"
-#RecvFromForm()
+def SaveLog(strRecv, getURL) :
+    Strtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
+    try :
+        LogFile = open("/home/pi/github/Add_Del_NetLog.txt","a+")
+        LogFile.write("\n+++++++++++++++++++++++++++++++++++++++++\n")
+        LogFile.write("时间:" + Strtime + "-->添加网站:\n")
+        LogFile.write("网站名称:" + strRecv + "\n")
+        LogFile.write("网站地址:" + getURL + "\n")
+        LogFile.close()
+    except IOError:
+        LogFile.close()
+
 if getPaswd == "haitao" :
 	ReplaceStr()
 	AddStrToFile()

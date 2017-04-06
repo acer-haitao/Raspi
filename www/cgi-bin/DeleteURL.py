@@ -13,10 +13,9 @@ import sys
 import re
 import cgi,cgitb
 import codecs
-
+import time
 
 #接收数据
-#def RecvFromForm():
 form = cgi.FieldStorage()
 getName = form.getvalue('deletenetName')
 getURL = form.getvalue('deletenetURL')
@@ -26,34 +25,22 @@ strRecv = getName.decode("gb2312").encode("utf-8")
 
 
 #读取文件
-#print file('d:\\a.txt').read()
 str = strRecv + "</a></li>"
 tt = [str]
-SAVEURL  = "My Test!"
+SAVEURL  = [strRecv, getURL]
 
 #打开文件删除指定内容所在行
 def DeleteURL():
-	filewrite = open('/home/pi/github/FindNetURL.txt','w')
-    
         with open('/www/right.html','r') as f:
 		with open ('/home/pi/righttmp.html','w') as g:
 			for line in f.readlines():
 				if all(string not in line for string in tt) :
 					g.write(line)
 				else :
-                                        try :
-					    filewrite.write(line)
-	            			    filewrite.close()
-                                        except IOError:
-                                            print "IOError"
-        
+                                        SAVEURL[1] = line
         shutil.move('/home/pi/righttmp.html','/www/right.html')
-        #os.rename('/www/righttmp.html','/www/right.html')
 
 def SucessPrin():
-
-	fileread = open('/home/pi/github/FindNetURL.txt','r')
-	SAVEURL = fileread.readline()
 	print "Content-type:text/html"
 	print
 	print "<html>"
@@ -63,7 +50,7 @@ def SucessPrin():
 	print "</head>"
 	print "<body>"
 	print "<h2>网站名称:%s </h2>" %	(strRecv)
-	print "<h2>网站地址:%s </h2>" % (SAVEURL)
+	print "<h2>网站地址:%s </h2>" % (SAVEURL[1])
 	print "<h2><font color=\"#FF0000\" size=\"+3\">提交成功！</font>本页面3秒后自动关闭.</h2>"
 	print "<meta http-equiv=\"refresh\" content=\"3; url=../HT-Test.html\">"
 	print "<script type=\"text/jscript\">"
@@ -71,12 +58,7 @@ def SucessPrin():
 	print "</script>"
 	print "</body>"
 	print "</html>"
-	fileread.close()
-	fileremove = "/home/pi/github/FindNetURL.txt"
-	if os.path.exists(fileremove) :
-		os.remove(fileremove)
-	else :
-		FaildPrin()
+        SaveLog(strRecv, SAVEURL[1])
 def FaildPrin():
 	print "Content-type:text/html"
 	print
@@ -95,6 +77,17 @@ def FaildPrin():
 	print "</script>"
 	print "</body>"
 	print "</html>"
+def SaveLog(strRecv, getURL):
+    Strtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    try :   
+        LogFile = open("/home/pi/github/Add_Del_NetLog.txt","a+")
+        LogFile.write("\n--------------------------------------\n")
+        LogFile.write("时间:" + Strtime + "-->删除网站:\n")
+        LogFile.write("网站名称:" + strRecv + "\n")
+        LogFile.write("网站地址:" + getURL + "\n")
+        LogFile.close()
+    except IOError:
+        LogFile.close()
 
 if getPaswd == "haitao":
         if ((getName != "") or (getURL != "")):
