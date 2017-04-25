@@ -53,7 +53,7 @@ a:hover{
 
 /*logo和搜索开始*/
 .navimg{
-	height: 100px;
+	height: 115px;
 	width: 100%;
 	position: relative;
 }
@@ -65,20 +65,20 @@ a:hover{
 	top: 18px;
 }
 .navimg .row .Bdsearch form .Bdtext{
-	width:800px;
-	height: 38px;
+	width:700px;
+	height: 60px;
 	text-indent: 18px;
 	font-size: 25px;
 	float: left;
 	color: #3385FF;
 	position: absolute;
-	left: 100px;
+	left: 250px;
 	top: 8px;
 	border: 1px solid #3385FF;
 }
 .navimg .row .Bdsearch form .Bdss{
-	width: 120px;
-	height: 38px;
+	width: 150px;
+	height: 60px;
 	background: #3385FF;
 	color: white;
 	border: 0px none;

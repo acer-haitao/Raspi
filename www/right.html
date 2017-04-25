@@ -7,10 +7,12 @@
     <meta name="description" content="网站主要展示自己的学习成果和经验积累，不断的提升自己的知识完善自己">   <!-- 写自己网站的简介 -->
   	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<!--<link rel="shortcut icon" href="img/mackxin.ico" />--><!-- 网页标题图标引导文件 -->
 </head>
 
 <body>
+
 
 	<!-- 顶部导航栏开始 -->
 	<div id="nav-top">
@@ -29,6 +31,27 @@
 	
 	<!-- logo和搜索开始 -->
 	<div class="container navimg">
+	<!--时间控件-->
+			<div class="smallDate" id="smallDate">
+    		<div class="date_main">
+				<div class="date_left">
+					<ul class="styleCircle">
+						<li></li><li></li><li></li><li></li> 
+					</ul>
+					<div class="main">
+						<p class="month"></p>
+						<p class="day"></p>
+					</div>
+				</div>				
+				<div class="date_right">
+					<p class="time"></p>
+					<p class="date"></p>
+					<p class="week"></p>
+				</div>
+			</div>
+		</div>
+<!--时间控件-->
+
 		<div class="row">
 			<div class="col-xs-8 col-md-8 Bdsearch">
 				<form action="http://www.baidu.com/baidu" target="_blank">
@@ -41,11 +64,11 @@
 			          </tr>
 			      </table>
 			    </form>
-			</div>
+			</div>		
 		</div>
 	</div>
 	<!-- logo和搜索结束 -->
-	
+
 	
 	<!-- 导航标签页开始 -->
 	<div class="container navbq">
@@ -413,6 +436,9 @@
 		</div>
 	</footer>
 	
+	
+	
+	<script type="text/javascript" src="js/smallDate.js"></script>
 	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
@@ -422,7 +448,15 @@
 	function showPage(tabId){
     $('#maintab a[href="#'+tabId+'"]').tab('show'); // 显示移入的tab页面
   	}
+	
+	window.onload = function(){
+				myDesk.init();
+				new Drag().init({id:"smallDate"});
+				new tmCalender({id : "Mycalendar"}).init();
+			};
+
 	</script>
+
 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261128615'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +	"s11.cnzz.com/z_stat.php%3Fid%3D1261128615%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 </body>
 </html>
