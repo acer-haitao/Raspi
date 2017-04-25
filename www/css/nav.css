@@ -162,9 +162,8 @@ a:hover{
 	display: block;
 	width: 100%;/*width: 189px*/
 	height: 45px;
-	line-height: 45px;
-	text-align: center;
-	font-size: 22px;
+	text-align: left;
+	font-size: 18px;
 	transition: 1s;
 	font-weight: 500;
 	color: #3385FF;

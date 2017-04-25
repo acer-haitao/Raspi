@@ -89,7 +89,7 @@ def SaveLog(strRecv, getURL):
     except IOError:
         LogFile.close()
 
-if getPaswd == "haitao":
+if getPaswd == "haitaodelete":
         if ((getName != "") or (getURL != "")):
 	#if getName != "" :
 		DeleteURL()

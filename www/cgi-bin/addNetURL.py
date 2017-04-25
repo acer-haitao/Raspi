@@ -99,7 +99,7 @@ def SaveLog(strRecv, getURL) :
     except IOError:
         LogFile.close()
 
-if getPaswd == "haitao" :
+if getPaswd == "haitaoadd" :
 	ReplaceStr()
 	AddStrToFile()
 	SucessPrin()
