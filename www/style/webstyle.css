@@ -5,7 +5,7 @@ a{ text-decoration:none;}
 img{ border:none;}
 ul,ol{ list-style:none;}
 
-.common_title{ width:1100px; margin:0 auto; background:url(../images/title_bg.png) repeat-x center 10px; text-align:center; }
+.common_title{ width:1349px; margin:0 auto; background:url(../images/title_bg.png) repeat-x center 10px; text-align:center; }
 .common_title h2{ font-size:20px; color:#333; font-weight:100; background:#f2f4f6; display:inline-block; padding:0 20px;}
 .common_title p{ font-size:12px; color:#00b3e1; text-transform:uppercase; line-height:1em; margin:10px 0;}
 .common_title i{ width:50px; height:1px; display:inline-block; background:#00b3e1}
@@ -14,13 +14,16 @@ ul,ol{ list-style:none;}
 
 
 /*头部区域*/
-.header{ width:1150px; height:120px; margin:0 auto; position:relative;}
+.header{ width:1349px; height:120px;  /*background: #000000;*/}
+.header .left_time{ width:210px; height:120px;  /* background: #ffffff;*/  float: left; }
+.header .center_logo{ width:120px; height:120px;  /*background: #00ff00;*/float: left; }
+.header .right_nav{ width:1019px; height:120px;  /* background: #0000ff;*/float: left; }
+/*
 .hd_logo{  top:-10px}
 
 .hd_tel{ position:absolute; top:16px;right:0; font-size:12px;color:#888; background:url(../images/icon_bg.png) no-repeat left 8px; padding-left:35px;}
 
 .hd_tel p{ font-size:20px; color:#00b3e1; font-weight:900; line-height:1em;}
-
 
 .hd_nav{ height:50px; position:absolute; bottom:0;left:270px}
 .hd_nav li{ float:left; position:relative;}
@@ -29,19 +32,21 @@ ul,ol{ list-style:none;}
 
 .hd_nav li.on a,.hd_nav li:hover a{color:#00b3e1}
 .hd_nav li.on i,.hd_nav li:hover i{ left:0; width:100%;}
+*/
+
 
 /*头部区域 end*/
 
 
 
 /*海报区域*/
-.banner{ width:100%; height:500px; background:url(../images/banner.jpg) no-repeat center}
+.banner{ width:1349px; height:500px; background:url(../images/banner.jpg) no-repeat center}
 /*海报区域 end*/
 
 
 /*关于我们区域*/
-.about{ width:1100px; height:180px; margin:95px auto;}
-.about .box{ width:534px; height:180px; border:1px solid #eee; position:relative; transition:0.3s;}
+.about{ width:1349px; height:180px; margin:95px auto;}
+.about .box{ width:650px; height:180px; border:1px solid #eee; position:relative; transition:0.3s;}
 .about .box:hover{ background:#00408f; border:1px solid #00408f;}
 .about .box_l{ float:left;}
 .about .box_r{ float:right;}
@@ -60,7 +65,7 @@ ul,ol{ list-style:none;}
 
 /*产品区域*/
 
-.pro{ width:100%; height:630px; background:#f2f4f6; overflow:hidden}
+.pro{ width:1349px; height:630px; background:#f2f4f6; overflow:hidden}
 .pro_title{ margin-top:75px; margin-bottom:35px;}
 .pro_con{ width:1180px; height:300px; margin:0 auto;}
 
@@ -84,11 +89,11 @@ ul,ol{ list-style:none;}
 
 
 /*新闻区域*/
-.news{ width:1100px; height:445px; margin:90px auto;}
+.news{ width:1349px; height:445px; margin:90px auto;}
 .news_title{}
 .news_title h2{ background:#fff;}
 
-.news_con{ width:1100px; height:340px;  margin-top:40px;}
+.news_con{ width:1349px; height:340px;  margin-top:40px;}
 .news_main{ width:660px; height:340px; background:#0CF; float:left;}
 .news_main_left{ width:160px; padding-left:20px; height:340px; background:#3f434c; float:left;}
 .news_main_left .img{ margin-top:25px;}
@@ -123,7 +128,7 @@ ul,ol{ list-style:none;}
 .news_main_right .box_b h4 a{ color:#00408f;}
 .news_main_right .box_b .box_more{ border:1px solid #00408f; color:#00408f}
 
-.news .video{width:420px; height:340px; float:right;}
+.news .video{width:600px; height:340px; float:right;}
 .news .video .text{ text-align:center; border:1px solid #eee; border-top:none; height:65px;}
 .news .video .text h4{ font-size:16px; color:#3f434c; font-weight:100; padding-top:15px;}
 .news .video .text h4 span{ display:block; text-transform:uppercase; font-size:12px; color:#b0b1b4;}
@@ -138,7 +143,7 @@ ul,ol{ list-style:none;}
 /*底部区域 end*/
 /*2016-11-27--21:31*/
 
-.foot{ width:1100px; height:200px; background:#00b3e1; margin:0 auto; position:relative;}
+.foot{ width:1349px; height:200px; background:#000000; margin:0 auto; position:relative;}
 /*.foot{ width:100%; height:250px; background:#00b3e1;} */
 .foot-item1{ width:200px; height:20px; border:1px ; float:left}   
 .foot-item2{ width:200px; height:20px; border:1px ; float:left}  

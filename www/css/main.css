@@ -1,13 +1,11 @@
 .smallDate {
-  width: 200px;/*最外边红框宽度*/
-  height: 100px;/*最外边红框高度*/
+  width: 180px;/*最外边红框宽度*/
+  height: 90px;/*最外边红框高度*/
   cursor: default;
   position: absolute;
-  left: 20px;
-  top: 10px;
+  margin:20px;
   border: 1px dotted rgba(200, 200, 200, 0);
   border-radius: 5px;
-  padding: 10px;
   transition: border .4s;
   border: 1px solid red;
 }
@@ -25,17 +23,17 @@
   height: 5px;/*左侧细线小框里红块距离*/
 }
 .smallDate .date_main .date_left .styleCircle li {
-  width: 3px;
-  height: 3px;
+  width: 1px;
+  height: 1px;
   border: 1px solid #E50020;
   border-radius: 100%;
   float: left;
-  margin: 5px 4px;
+  margin: 4px 4px;
 }
 .smallDate .date_main .date_left .main {
   text-align: center;/*红色块*/
   background: #fd9187;
-  width: 40px;
+  width: 45px;
   height: 55px;
   margin: 0 auto;
 }
@@ -50,9 +48,9 @@
   color: #fff;
 }
 .smallDate .date_main .date_right {
-  width: 130px;
-  height: 70px;
-  float: right;
+  width: 180px;
+  height: 80px;
+  float: top;
 }
 .smallDate .date_main .date_right p {
   font-size: 14px;
