@@ -14,15 +14,15 @@ ul,ol{ list-style:none;}
 
 
 /*头部区域*/
-.header{ width:1100px; height:106px; margin:0 auto; position:relative;}
-.hd_logo{ position:absolute; top:16px;left:0}
+.header{ width:1150px; height:120px; margin:0 auto; position:relative;}
+.hd_logo{  top:-10px}
 
 .hd_tel{ position:absolute; top:16px;right:0; font-size:12px;color:#888; background:url(../images/icon_bg.png) no-repeat left 8px; padding-left:35px;}
 
 .hd_tel p{ font-size:20px; color:#00b3e1; font-weight:900; line-height:1em;}
 
 
-.hd_nav{  height:50px; position:absolute; bottom:0;right:0}
+.hd_nav{ height:50px; position:absolute; bottom:0;left:270px}
 .hd_nav li{ float:left; position:relative;}
 .hd_nav li a{ display:block; line-height:50px; padding:0 24px; font-size:14px; color:#333;}
 .hd_nav li i{ display:block; width:0%; height:3px; background:#00b3e1; position:absolute; bottom:0; left:50%; transition:0.3s;}
