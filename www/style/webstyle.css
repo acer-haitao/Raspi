@@ -14,10 +14,13 @@ ul,ol{ list-style:none;}
 
 
 /*头部区域*/
-.header{ width:1349px; height:120px;  /*background: #000000;*/}
+.header{ width:1349px; height:120px;   margin:0 auto; /*background: #000000;*/}
 .header .left_time{ width:210px; height:120px;  /* background: #ffffff;*/  float: left; }
 .header .center_logo{ width:120px; height:120px;  /*background: #00ff00;*/float: left; }
 .header .right_nav{ width:1019px; height:120px;  /* background: #0000ff;*/float: left; }
+
+#audio { display:block;width: 83px; height: 24px; background: url("../images/audio.png");margin-top:20px; float:right}/*position: fixed固定位置*/
+#audio div { width: 51px; height: 24px; background: url("../images/button.png"); -webkit-transform: translate(32px); transform: translate(32px); transition: all .2s; }
 /*
 .hd_logo{  top:-10px}
 
@@ -40,12 +43,12 @@ ul,ol{ list-style:none;}
 
 
 /*海报区域*/
-.banner{ width:1349px; height:500px; background:url(../images/banner.jpg) no-repeat center}
+.banner{ width:1349px;  margin:0 auto; height:500px; background:url(../images/banner.jpg) no-repeat center}
 /*海报区域 end*/
 
 
 /*关于我们区域*/
-.about{ width:1349px; height:180px; margin:95px auto;}
+.about{ width:1349px; height:180px; margin:0px auto;}
 .about .box{ width:650px; height:180px; border:1px solid #eee; position:relative; transition:0.3s;}
 .about .box:hover{ background:#00408f; border:1px solid #00408f;}
 .about .box_l{ float:left;}
@@ -65,7 +68,7 @@ ul,ol{ list-style:none;}
 
 /*产品区域*/
 
-.pro{ width:1349px; height:630px; background:#f2f4f6; overflow:hidden}
+.pro{ width:1349px; height:630px; background:#f2f4f6;  margin:0 auto; overflow:hidden}
 .pro_title{ margin-top:75px; margin-bottom:35px;}
 .pro_con{ width:1180px; height:300px; margin:0 auto;}
 

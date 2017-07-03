@@ -1,1 +1,11 @@
-VNC设置参数为： vncserver -geometry 1300x768
+VNC设置参数为： VNC
+17
+root      1814     1  0 18:28 ?        00:00:00 Xtightvnc :1 -desktop X -auth /root/.Xauthority -geometry 1300x670 -depth 24 -rfbwait 120000 -rfbauth /root/.vnc/passwd -rfbport 5901 -fp /usr/share/fonts/X11/misc/,/usr/share/fonts/X11/Type1/,/usr/share/fonts/X11/75dpi/,/usr/share/fonts/X11/100dpi/ -co /etc/X11/rgb
+root      1902     1  0 18:28 ?        00:00:00 /bin/sh /root/.vnc/xstartup
+root      8765     1  0 18:31 ?        00:00:00 Xtightvnc :2 -desktop X -auth /root/.Xauthority -geometry 1300x670 -depth 24 -rfbwait 120000 -rfbauth /root/.vnc/passwd -rfbport 5902 -fp /usr/share/fonts/X11/misc/,/usr/share/fonts/X11/Type1/,/usr/share/fonts/X11/75dpi/,/usr/share/fonts/X11/100dpi/ -co /etc/X11/rgb
+root      8824     1  0 18:31 ?        00:00:00 /bin/sh /root/.vnc/xstartup
+root     11213   759  0 18:32 ?        00:00:00 /www/cgi-bin/setVNC.cgi
+root     11230     1 14 18:32 ?        00:00:00 Xtightvnc :3 -desktop X -auth /root/.Xauthority -geometry 1300x670 -depth 24 -rfbwait 120000 -rfbauth /root/.vnc/passwd -rfbport 5903 -fp /usr/share/fonts/X11/misc/,/usr/share/fonts/X11/Type1/,/usr/share/fonts/X11/75dpi/,/usr/share/fonts/X11/100dpi/ -co /etc/X11/rgb
+root     11268     1  0 18:32 ?        00:00:00 /bin/sh /root/.vnc/xstartup
+root     11285 11213  0 18:32 ?        00:00:00 sh -c ps -ef|grep -i vnc >> /home/pi/github/www_log.txt
+root     11288 11285  0 18:32 ?        00:00:00 grep -i vnc

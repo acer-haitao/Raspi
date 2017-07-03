@@ -12,7 +12,7 @@ import re
 import cgi,cgitb
 import codecs
 import time
-
+import pymysql
 #接收数据
 #def RecvFromForm():
 form = cgi.FieldStorage()
@@ -22,7 +22,24 @@ getAddNum = form.getvalue('addnumber')
 getPaswd = form.getvalue('pwd')
 #将gb2312转换成utf-8
 strRecv = getName.decode("gb2312").encode("utf-8")
-
+#操作数据库create table mynet(Num int(5),Name varchar(100),URL varchar(200))character set uft8;
+def Dbinsert():
+    Strtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
+    db = pymysql.connect("127.0.0.1","root","haitao","mynetdb",charset='utf8')
+    # 使用cursor()方法获取操作游标 
+    cursor = db.cursor()
+    # SQL 插入语句
+    sql = """INSERT INTO mynet(Num,Name,URL,Time) VALUES (%s,%s,%s,%s) """
+    try:
+    # 执行sql语句
+        cursor.execute(sql,[getAddNum,strRecv,getURL,Strtime])
+    # 提交到数据库执行
+        db.commit()
+    except:
+    # 如果发生错误则回滚
+        db.rollback()
+    # 关闭数据库连接
+        db.close()
 #替换字符串中的addURL和addName，并将替换后的结果写入文件中
 def ReplaceStr():
 	str = "<li><a href=\"addURL\" target=\"_blank\">addName</a></li>\n"
@@ -100,7 +117,8 @@ def SaveLog(strRecv, getURL) :
         LogFile.close()
 
 if getPaswd == "haitaoadd" :
-	ReplaceStr()
+        Dbinsert()
+        ReplaceStr()
 	AddStrToFile()
 	SucessPrin()
 else :

@@ -17,8 +17,10 @@
 		display: block;
         background: #ffffff;
 		width:1009px;
-		height:58px; bottom:0;right:10px;
-	    overflow: hidden
+		margin: 70px auto 150px;
+		height:50px; bottom:0;
+		right:10px;
+	    overflow: hidden;
 	  }
       .nav-menu {
 		/*
@@ -149,7 +151,7 @@
       .nav-menu li .active .back,
       .nav-menu li a:hover .front,
       .nav-menu li a:hover .back {
-        background-color: #51938f;/*Home*/
+        background-color: #6495ED;/*51938fHome*/
         -webkit-background-size: 5px 5px;
         background-size: 5px 5px;
         background-position: 0 0, 30px 30px;
