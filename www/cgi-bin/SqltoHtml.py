@@ -14,10 +14,15 @@ import codecs
 import time
 import pymysql
 import MySQLdb
+
+
 #接收数据
 #def RecvFromForm():
-#form = cgi.FieldStorage()
+form = cgi.FieldStorage()
 #getURL = form.getvalue('netURL')
+#接受xmlhttp.open("GET","/cgi-bin/SqltoHtml.py?q="+str,true)传递的参数
+getNum = form.getvalue('q')
+#print getNum
 #getName = form.getvalue('netName')
 #getAddNum = form.getvalue('addnumber')
 #getPaswd = form.getvalue('pwd')
@@ -33,7 +38,7 @@ def Dbinsert():
     cursor = db.cursor()
     # SQL 查询语句
     #sql = """INSERT INTO mynet(Num,Name,URL,Time) VALUES (%s,%s,%s,%s) """
-    sql ="""SELECT * FROM mynet WHERE Num = 10 """
+    sql ="""SELECT * FROM mynet WHERE Num = %s """ % getNum
     try:
     # 执行sql语句
         # print "try"
@@ -49,7 +54,7 @@ def Dbinsert():
             Nameconver = Name.encode('UTF-8')
             #print Nameconver
             print "<tr>"
-            print "<td>%s</td>" % (Num)
+            print "<td>%s</td>" % (getNum)
             print "<td>%s</td>" % (Nameconver)
             print "<td>%s</td>" % (URL)
             print "<td>%s</td>" % (Time)

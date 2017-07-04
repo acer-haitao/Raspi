@@ -29,7 +29,7 @@ function showSite(str)
             document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET","getsite_mysql.php?q="+str,true);
+    xmlhttp.open("GET","/cgi-bin/SqltoHtml.py?q="+str,true);
     xmlhttp.send();
 }
 </script>
