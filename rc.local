@@ -1,0 +1,42 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+# Print the IP address
+_IP=$(hostname -I) || true
+if [ "$_IP" ]; then
+  printf "My IP address is %s\n" "$_IP"
+
+fi
+
+ #打开boa服务器
+  sudo /etc/boa/boa &
+
+  #打开花生壳客户端
+  sudo phddns start &
+
+  #/etc/boa/send_IP.sh >> /home/pi/github/send_ip__mail/send_IP.log 2>&1
+  #/home/pi/github/send_ip__mail/send_IP.sh >> /home/pi/github/send_ip__mail/send_IP.log 2>&1
+  #/home/pi/github/send_ip__mail/send_IP.sh &
+  sleep 30
+
+  #定时向邮箱发送邮件
+  sudo /usr/local/bin/raspbian-ip-mailer.py  &
+  sudo /home/pi/github/raspbian-ip-mailer.py  &
+  #定时检测是否掉线
+  #sudo /home/pi/github/./keep_check.sh &
+  sudo /home/pi/github/./oray_ckeck.py &
+
+
+
+
+exit 0
