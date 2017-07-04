@@ -1,3 +1,66 @@
 [04/Jul/2017:06:58:13 +0000] cgi.c:512 - /www/getsite_mysql.php: No such file or directory
 [04/Jul/2017:06:58:15 +0000] cgi.c:512 - /www/getsite_mysql.php: No such file or directory
 [04/Jul/2017:06:58:20 +0000] cgi.c:512 - /www/getsite_mysql.php: No such file or directory
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/SqltoHtml.py", line 69
+    print "<meta
+               ^
+SyntaxError: EOL while scanning string literal
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
