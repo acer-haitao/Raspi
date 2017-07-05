@@ -72,16 +72,17 @@ def SucessPrin():
 	print "<html>"
 	print "<head>"
 	print "<meta http-equiv=\"Content-Type\"content=\"text/html;charset=utf-8\"/>"
+        print "<meta http-equiv=\"refresh\"  content=\"3;url=../HT-Test.html\">"
 	print "<title>远程添加网址测试实例</title>"
 	print "</head>"
 	print "<body>"
 	print "<h2>网站名称:%s </h2>" %	(strRecv)
 	print "<h2>网站地址:%s </h2>" % (getURL)
 	print "<h2><font color=\"#FF0000\"	size=\"+3\">提交成功！</font>本页面3秒后自动关闭.</h2>"
-        print "<meta http-equiv=\"refresh\" content=\"3; url=../HT-Test.html\">"
-	print "<script type=\"text/jscript\">"
-	print "setTimeout(\"self.close()\", 3000)"
-	print "</script>"
+        #print "<meta http-equiv=\"refresh\" content=\"3; url=../HT-Test.html\">"
+	#print "<script type=\"text/jscript\">"
+	#print "setTimeout(\"self.close()\", 3000)"
+	#print "</script>"
 	print "</body>"
 	print "</html>"
         SaveLog(strRecv, getURL)
@@ -92,16 +93,17 @@ def FaildPrin():
 	print "<html>"
 	print "<head>"
 	print "<meta charset=\"utf-8\">"
+        print "<meta http-equiv=\"refresh\"  content=\"3;url=../HT-Test.html\">"
 	print "<title>远程添加网址测试实例</title>"
 	print "</head>"
 	print "<body>"
 	print "<h2>网站名称:%s </h2>" %	(strRecv)
 	print "<h2>网站地址:%s </h2>" % (getURL)
 	print "<h2><font color=\"#FF0000\"size=\"+3\">本提交失败！请检查您的输入是否有误!该页面3秒后自动关闭</font></h2>"
-        print "<meta http-equiv=\"refresh\" content=\"3\";   url=../HT-Test.html\">"
-	print "<script type=\"text/jscript\">"
-	print "setTimeout(\"self.close()\", 3000)"
-	print "</script>"
+        #print "<meta http-equiv=\"refresh\" content=\"3\"; url=\"HT-Test.html\">"
+	#print "<script type=\"text/jscript\">"
+	#print "setTimeout(\"self.close()\", 3000)"
+	#print "</script>"
 	print "</body>"
 	print "</html>"
 def SaveLog(strRecv, getURL) :
