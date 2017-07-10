@@ -155,3 +155,261 @@ Traceback (most recent call last):
   File "/www/cgi-bin/addNetURL.py", line 24, in <module>
     strRecv = getName.decode("gb2312").encode("utf-8")
 AttributeError: 'NoneType' object has no attribute 'decode'
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
