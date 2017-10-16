@@ -41,7 +41,7 @@ def Dbinsert():
     # 关闭数据库连接
         db.close()
 #替换字符串中的addURL和addName，并将替换后的结果写入文件中
-def DbinsertALIYUN():
+def Dbinsert-ALIYUN():
     Strtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
     db = pymysql.connect("bdm273925510.my3w.com","bdm273925510","haitao131","bdm273925510_db",charset='utf8')
     # 使用cursor()方法获取操作游标 
@@ -90,7 +90,7 @@ def SucessPrin():
 	print "<html>"
 	print "<head>"
 	print "<meta http-equiv=\"Content-Type\"content=\"text/html;charset=utf-8\"/>"
-        print "<meta http-equiv=\"refresh\"  content=\"3;url=../HT-Test.html\">"
+    print "<meta http-equiv=\"refresh\"  content=\"3;url=../HT-Test.html\">"
 	print "<title>远程添加网址测试实例</title>"
 	print "</head>"
 	print "<body>"
@@ -99,7 +99,7 @@ def SucessPrin():
 	print "<h2><font color=\"#FF0000\"	size=\"+3\">提交成功！</font>本页面3秒后自动关闭.</h2>"
 	print "</body>"
 	print "</html>"
-        SaveLog(strRecv, getURL)
+    SaveLog(strRecv, getURL)
 #提交失败响应
 def FaildPrin():
 	print "Content-type:text/html"
@@ -107,7 +107,7 @@ def FaildPrin():
 	print "<html>"
 	print "<head>"
 	print "<meta charset=\"utf-8\">"
-        print "<meta http-equiv=\"refresh\"  content=\"3;url=../HT-Test.html\">"
+    print "<meta http-equiv=\"refresh\"  content=\"3;url=../HT-Test.html\">"
 	print "<title>远程添加网址测试实例</title>"
 	print "</head>"
 	print "<body>"
@@ -130,12 +130,12 @@ def SaveLog(strRecv, getURL) :
 
 if getPaswd == "haitaoadd" :
     Dbinsert()
-    DbinsertALIYUN()
+	Dbinsert-ALIYUN()
     ReplaceStr()
-    AddStrToFile()
-    SucessPrin()
+	AddStrToFile()
+	SucessPrin()
 else :
-    FaildPrin()
+	FaildPrin()
 
 
 

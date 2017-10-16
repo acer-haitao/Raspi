@@ -41,24 +41,6 @@ def Dbinsert():
     # 关闭数据库连接
         db.close()
 #替换字符串中的addURL和addName，并将替换后的结果写入文件中
-def DbinsertALIYUN():
-    Strtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
-    db = pymysql.connect("bdm273925510.my3w.com","bdm273925510","haitao131","bdm273925510_db",charset='utf8')
-    # 使用cursor()方法获取操作游标 
-    cursor = db.cursor()
-    # SQL 插入语句
-    sql = """INSERT INTO mynet(Num,Name,URL,Time) VALUES (%s,%s,%s,%s) """
-    try:
-    # 执行sql语句
-        cursor.execute(sql,[getAddNum,strRecv,getURL,Strtime])
-    # 提交到数据库执行
-        db.commit()
-    except:
-    # 如果发生错误则回滚
-        db.rollback()
-    # 关闭数据库连接
-        db.close()
-#替换字符串中的addURL和addName，并将替换后的结果写入文件中
 def ReplaceStr():
 	str = "<li><a href=\"addURL\" target=\"_blank\">addName</a></li>\n"
 	getURLstr = str.replace("addURL",getURL)
@@ -97,6 +79,10 @@ def SucessPrin():
 	print "<h2>网站名称:%s </h2>" %	(strRecv)
 	print "<h2>网站地址:%s </h2>" % (getURL)
 	print "<h2><font color=\"#FF0000\"	size=\"+3\">提交成功！</font>本页面3秒后自动关闭.</h2>"
+        #print "<meta http-equiv=\"refresh\" content=\"3; url=../HT-Test.html\">"
+	#print "<script type=\"text/jscript\">"
+	#print "setTimeout(\"self.close()\", 3000)"
+	#print "</script>"
 	print "</body>"
 	print "</html>"
         SaveLog(strRecv, getURL)
@@ -114,6 +100,10 @@ def FaildPrin():
 	print "<h2>网站名称:%s </h2>" %	(strRecv)
 	print "<h2>网站地址:%s </h2>" % (getURL)
 	print "<h2><font color=\"#FF0000\"size=\"+3\">本提交失败！请检查您的输入是否有误!该页面3秒后自动关闭</font></h2>"
+        #print "<meta http-equiv=\"refresh\" content=\"3\"; url=\"HT-Test.html\">"
+	#print "<script type=\"text/jscript\">"
+	#print "setTimeout(\"self.close()\", 3000)"
+	#print "</script>"
 	print "</body>"
 	print "</html>"
 def SaveLog(strRecv, getURL) :
@@ -129,13 +119,12 @@ def SaveLog(strRecv, getURL) :
         LogFile.close()
 
 if getPaswd == "haitaoadd" :
-    Dbinsert()
-    DbinsertALIYUN()
-    ReplaceStr()
-    AddStrToFile()
-    SucessPrin()
+        Dbinsert()
+        ReplaceStr()
+	AddStrToFile()
+	SucessPrin()
 else :
-    FaildPrin()
+	FaildPrin()
 
 
 
