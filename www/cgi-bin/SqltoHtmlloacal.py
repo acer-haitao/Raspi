@@ -31,7 +31,7 @@ getNum = form.getvalue('q')
 #操作数据库create table mynet(Num int(5),Name varchar(100),URL varchar(200))character set uft8;
 def Dbinsert():
     PrintTable()
-    db = MySQLdb.connect("bdm273925510.my3w.com","bdm273925510","haitao131","bdm273925510_db",charset='utf8' )
+    db = MySQLdb.connect("127.0.0.1","root","haitao","mynetdb",charset='utf8' )
     #db = MySQLdb.connect("127.0.0.1","root","haitao","mynetdb")
     # print "mysql"
     # 使用cursor()方法获取操作游标 
