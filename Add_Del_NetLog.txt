@@ -1454,3 +1454,14 @@
 时间:2017-12-07 17:52:14-->添加网站:
 网站名称:静觅Python
 网站地址:http://cuiqingcai.com/
+
++++++++++++++++++++++++++++++++++++++++++
+时间:2017-12-07 22:12:19-->添加网站:
+网站名称:Python3入门资料
+网站地址:https://zhuanlan.zhihu.com/p/24358829?refer=passer
+
+--------------------------------------
+时间:2017-12-07 22:29:19-->删除网站:
+网站名称:百度分享
+网站地址:<li><a href="https://pan.baidu.com/share/link?uk=522235264&shareid=3540934875#list/path=%2Fpython&parentPath=%2F" target="_blank">Python百度分享</a></li>
+

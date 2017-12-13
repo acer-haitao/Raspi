@@ -13,11 +13,11 @@ while(1) :
     #print str
     if ('|              Runstatus:  ONLINE                   |\n' == var) :
         print "花生壳客户端已经登录成功"
-        os.system("sleep 2")
+        os.system("sleep 30")
     else :
         print "正在重启花生壳客户端"
         os.system("yes | sudo phddns stop")
         os.system("sleep 10")
         os.system("sudo phddns start")
-        os.system("sleep 60")
+        os.system("sleep 90")
 

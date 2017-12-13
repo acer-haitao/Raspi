@@ -1,1 +1,1 @@
-<li><a href="http://cuiqingcai.com/" target="_blank">静觅Python</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/24358829?refer=passer" target="_blank">Python3入门资料</a></li>
