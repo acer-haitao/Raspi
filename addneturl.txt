@@ -1,1 +1,1 @@
-<li><a href="https://zhuanlan.zhihu.com/p/24358829?refer=passer" target="_blank">Python3入门资料</a></li>
+<li><a href="http://www.jnmeilin.com/" target="_blank">美林医疗</a></li>
