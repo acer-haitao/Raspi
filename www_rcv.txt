@@ -157,3 +157,131 @@ magnet:?xt=urn:btih:3C767E2E49095A80967646CE9F0B937330126137
 留言内容：
  心电图机属于医疗器械中的医用电子设备，有单道、三道、六道、十二道等规格。心电图机的品牌还是比较多的，进口的有GE、日本光电、瑞士席勒，国产的有深圳迈瑞、理邦、邦建、科曼等。
 ------------------------------------------------
+时间:Wed Dec 27 09:05:55 2017
+邮箱： ROS
+留言内容：
+ https://www.cnblogs.com/liu-fa/p/5779206.html
+------------------------------------------------
+时间:Thu Dec 28 15:57:21 2017
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ 搬瓦工  七牛云
+------------------------------------------------
+时间:Mon Jan  1 20:50:42 2018
+邮箱： 解决python加密模块导入失
+留言内容：
+ https://www.zhihu.com/question/26857761
+------------------------------------------------
+时间:Tue Jan  2 10:04:34 2018
+邮箱： 留言
+留言内容：
+ http://blog.csdn.net/baidu_35085676/article/details/70431930
+------------------------------------------------
+时间:Thu Jan  4 11:37:53 2018
+邮箱： vim python补全
+留言内容：
+ http://www.pythonclub.org/linux/vim/pydiction
+------------------------------------------------
+时间:Thu Jan 11 17:45:58 2018
+邮箱： 树莓派摄像头
+留言内容：
+ http://blog.csdn.net/u011303443/article/details/52518369
+------------------------------------------------
+时间:Fri Jan 12 14:40:09 2018
+邮箱： Models
+留言内容：
+ http://blog.csdn.net/ab198604/article/details/12655765
+------------------------------------------------
+时间:Fri Jan 12 21:58:33 2018
+邮箱： 多字典合并
+留言内容：
+ from collections import ChainMap
+
+value = ChainMap()
+for list_num in range(1,13):
+    li_list = list_num + 1
+    value["key%s"%(list_num)] = li_list
+    value=value.new_child()
+    value=value.parents
+print(value)
+------------------------------------------------
+时间:Mon Jan 15 10:58:11 2018
+邮箱： python打包
+留言内容：
+ https://www.jianshu.com/p/5a59b6985346
+------------------------------------------------
+时间:Tue Jan 16 21:17:48 2018
+邮箱： py-to-pdf
+留言内容：
+ http://ju.outofmemory.cn/entry/335319
+------------------------------------------------
+时间:Tue Jan 16 21:19:26 2018
+邮箱： py-to-vidieo
+留言内容：
+ http://www.yunweipai.com/archives/23619.html
+------------------------------------------------
+时间:Tue Jan 16 21:25:19 2018
+邮箱： py-to-qq
+留言内容：
+ http://ju.outofmemory.cn/entry/331898
+------------------------------------------------
+时间:Tue Jan 16 21:37:56 2018
+邮箱： py
+留言内容：
+ http://ju.outofmemory.cn/entry/331802
+------------------------------------------------
+时间:Tue Jan 16 21:41:43 2018
+邮箱： google
+留言内容：
+ http://ju.outofmemory.cn/entry/331177
+------------------------------------------------
+时间:Tue Jan 16 21:42:55 2018
+邮箱： 蓝鲸笔记
+留言内容：
+ http://bluewhale.cc/
+------------------------------------------------
+时间:Tue Jan 16 22:01:51 2018
+邮箱： pyq5
+留言内容：
+ http://www.cnblogs.com/archisama/tag/PyQt5/
+------------------------------------------------
+时间:Tue Jan 16 22:04:34 2018
+邮箱： vim
+留言内容：
+ http://ju.outofmemory.cn/entry/306484
+------------------------------------------------
+时间:Tue Jan 16 22:08:11 2018
+邮箱： python读取配置文件
+留言内容：
+ http://ju.outofmemory.cn/entry/304313
+------------------------------------------------
+时间:Tue Jan 16 22:19:12 2018
+邮箱： vim
+留言内容：
+ http://ju.outofmemory.cn/entry/296921
+------------------------------------------------
+时间:Wed Jan 17 10:42:02 2018
+邮箱： 谷歌驱动
+留言内容：
+ http://npm.taobao.org/mirrors/chromedriver/
+------------------------------------------------
+时间:Wed Jan 17 22:15:25 2018
+邮箱： https://console
+留言内容：
+ HonorHT--y==face
+
+应用名称 HonorHT	
+API Key  alwCiUc1-vfHM-dZRwcDKwxFQywkZdSx	
+API Secret  uP1c40jZZvUgPzuP8SN2vuUCnoHwchzG
+
+------------------------------------------------
+时间:Thu Jan 18 10:10:28 2018
+邮箱： guestbook
+留言内容：
+ http://blog.csdn.net/Yort2016/article/details/73504445
+------------------------------------------------
+时间:Sun Jan 21 10:26:56 2018
+邮箱： 网易爬虫
+留言内容：
+ http://blog.csdn.net/freewebsys/article/details/79072511
+------------------------------------------------
