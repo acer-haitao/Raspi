@@ -1,0 +1,49 @@
+﻿
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>网易音乐数据分析应用测试</title> 
+<script>
+function showSite(str)
+{
+    if (str=="")
+    {
+        document.getElementById("txtHint").innerHTML="";
+        return;
+    } 
+    if (window.XMLHttpRequest)
+    {
+        // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {
+        // IE6, IE5 浏览器执行代码
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET","/cgi-bin/Net163.py?q="+str,true);
+    xmlhttp.send();
+}
+</script>
+</head>
+<body>
+<div style="width:100%;text-align:center">
+<form>
+		<select name="users" onchange="showSite(this.value)">
+				<option value="50000">网易评论</option>
+				<option value="5000000000">歌曲列表</option>
+		</select>
+</form>
+</div>
+<br>
+<div id="txtHint" style="width:100%;text-align:center"><b>亲,请稍后，正在拼命加载中.....</b></div>
+</body>
+</html>

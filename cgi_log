@@ -313,3 +313,52 @@ sudo: oraynewph: command not found
 /home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
 /home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
 sudo: oraynewph: command not found
+  File "/www/cgi-bin/Net163.py", line 63
+    print "<p align=left><span style="color:blue;font-weight:bold">%s留言:</span></p>"%(authorcv)
+                                          ^
+SyntaxError: invalid syntax
+  File "/www/cgi-bin/Net163.py", line 63
+    print "<p align=left><span style="color:blue;font-weight:bold">%s留言:</span></p>"%(authorcv)
+                                          ^
+SyntaxError: invalid syntax
+  File "/www/cgi-bin/Net163.py", line 63
+    print "<p align=left><span style="color:blue;font-weight:bold">%s留言:</span></p>"%(authorcv)
+                                          ^
+SyntaxError: invalid syntax
+  File "/www/cgi-bin/Net163.py", line 63
+    print "<p align=left><span style="color:blue;font-weight:bold">%s留言:</span></p>"%(authorcv)
+                                          ^
+SyntaxError: invalid syntax
+  File "/www/cgi-bin/Net163.py", line 66
+    print "<p class=\"text-justify\">%s</p>%(txtcv)
+                                                  ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/Net163.py", line 66
+    print "<p class=\"text-justify\">%s</p>%(txtcv)
+                                                  ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/Net163.py", line 66
+    print "<p class=\"text-justify\">%s</p>%(txtcv)
+                                                  ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/Net163.py", line 66
+    print "<p class=\"text-justify\">%s</p>%(txtcv)
+                                                  ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/Net163.py", line 66
+    print "<p class=\"text-justify\">%s</p>%(txtcv)
+                                                  ^
+SyntaxError: EOL while scanning string literal
+  File "/www/cgi-bin/Net163.py", line 66
+    print "<p class=\"text-justify\">%s</p>%(txtcv)
+                                                  ^
+SyntaxError: EOL while scanning string literal
+Traceback (most recent call last):
+  File "/www/cgi-bin/Net163.py", line 91, in <module>
+    Dbinsert()
+  File "/www/cgi-bin/Net163.py", line 77, in Dbinsert
+    db.rollback()
+_mysql_exceptions.OperationalError: (2006, 'MySQL server has gone away')
+/home/pi/github/ip_cpu_sd_info.sh: line 9: ifconfig: command not found
+/home/pi/github/ip_cpu_sd_info.sh: line 10: ifconfig: command not found
+sudo: oraynewph: command not found
