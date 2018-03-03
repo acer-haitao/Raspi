@@ -330,3 +330,105 @@ sudo apt-get upgrade
 留言内容：
  https://www.cnblogs.com/meitian/p/6346488.html
 ------------------------------------------------
+时间:Sat Jan 27 20:57:02 2018
+邮箱： MPlayer
+留言内容：
+ http://blog.csdn.net/LEEWENJIN/article/details/7615309
+------------------------------------------------
+时间:Sat Jan 27 23:17:41 2018
+邮箱： python2.7
+留言内容：
+ https://www.cnblogs.com/terryguan/p/7233801.html
+------------------------------------------------
+时间:Sun Jan 28 00:42:52 2018
+邮箱： web
+留言内容：
+ http://www.tufeiping.com/topic/146/%E5%88%86%E4%BA%ABapache-httpd%E7%9A%84%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B
+------------------------------------------------
+时间:Sun Jan 28 11:57:30 2018
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ https://www.lfd.uci.edu/~gohlke/pythonlibs/#mod_wsgi
+------------------------------------------------
+时间:Sun Jan 28 12:08:14 2018
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ https://packages.debian.org/source/sid/mod-wsgi
+------------------------------------------------
+时间:Sun Jan 28 19:10:33 2018
+邮箱： mod_wsgi发生错误
+留言内容：
+ https://www.cnblogs.com/zhangjpn/p/6749588.html
+------------------------------------------------
+时间:Mon Jan 29 09:33:09 2018
+邮箱： 树莓派镜像裁剪
+留言内容：
+ http://blog.csdn.net/talkxin/article/details/50464313
+------------------------------------------------
+时间:Mon Jan 29 10:29:49 2018
+邮箱： 树莓派数据备份
+留言内容：
+ http://blog.csdn.net/petrel2015/article/details/78817668
+------------------------------------------------
+时间:Mon Jan 29 17:53:18 2018
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ https://www.cnblogs.com/rollenholt/archive/2012/08/09/2631068.html
+------------------------------------------------
+时间:Mon Jan 29 17:57:29 2018
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ https://www.cnblogs.com/rollenholt/archive/2012/08/09/2631068.html
+------------------------------------------------
+时间:Tue Jan 30 15:44:01 2018
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ http://blog.csdn.net/dotuian/article/details/50340437
+------------------------------------------------
+时间:Wed Jan 31 11:30:03 2018
+邮箱： mysql密码
+留言内容：
+ https://jingyan.baidu.com/article/36d6ed1f5178fd1bcf48833e.html
+------------------------------------------------
+时间:Thu Feb  1 10:46:57 2018
+邮箱： Django分页
+留言内容：
+ http://blog.csdn.net/u011085172/article/details/71405043
+------------------------------------------------
+时间:Fri Feb  2 15:52:09 2018
+邮箱： pip - 2.7
+留言内容：
+ 所以还是重新安装Flask的0.9版本，不过这也不是个事，有了envitualenv后环境非常容易，今天试了 -i http://e.pypi.python.org/simple竟然不行了 = =！，找到这个镜像地址不错http://pypi.v2ex.com/simple
+
+哦，安装Flask0.9版本也很容易，直接pip install Flask==0.9即可。
+------------------------------------------------
+时间:Fri Feb  2 17:18:33 2018
+邮箱： apche-Django
+留言内容：
+ https://www.jianshu.com/p/ff78d1ab5091
+------------------------------------------------
+时间:Sun Feb  4 23:06:39 2018
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ https://www.cnblogs.com/zhaof/p/6930955.html
+------------------------------------------------
+时间:Sun Feb  4 23:13:34 2018
+邮箱： dih_yuhaitao@126.com
+留言内容：
+ https://www.cnblogs.com/kongzhagen/p/6472746.html
+------------------------------------------------
+时间:Mon Feb  5 09:16:30 2018
+邮箱： 搜狗爬虫
+留言内容：
+ http://blog.csdn.net/niuxiaojia09/article/details/55260770
+------------------------------------------------
+时间:Thu Feb  8 12:47:56 2018
+邮箱： Django
+留言内容：
+ http://blog.csdn.net/qq_24076135/article/details/78623890?locationNum=5&fps=1
+------------------------------------------------
+时间:Fri Feb 23 09:16:48 2018
+邮箱： Django
+留言内容：
+  workon DjangoWeb && python manage.py runserver 172.17.87.198:8080  &
+------------------------------------------------
