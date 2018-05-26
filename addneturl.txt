@@ -1,1 +1,1 @@
-<li><a href="http://www.jinghongtian.com/" target="_blank">京虹传感器</a></li>
+<li><a href="http://wiki.qt.io/Main/zh" target="_blank">Qt-ZH</a></li>
